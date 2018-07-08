@@ -1,0 +1,18 @@
+.menu-item-wrapper {
+    list-style-type: none;
+    padding:0;
+}
+
+.menu-item-wrapper .item{
+    background:orange;
+}
+
+.menu-item-wrapper .item:hover{
+    background-color: white;
+    cursor: pointer;
+    display: block;
+}
+
+.menu-item-wrapper .parent-item:hover li{
+    display: block;
+}
