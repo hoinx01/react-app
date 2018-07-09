@@ -4,6 +4,10 @@
 
 import LeftMenu from './left-menu/LeftMenu';
 import RightBlock from './right-block/RightBlock';
+// import { Route, Router } from 'react-router';
+import {ListCustomer} from './right-block/ListCustomer';
+import {CustomerDetail} from './right-block/CustomerDetail';
+import {Home} from './right-block/Home';
 
 class Layout extends Component {
     constructor(props) {
@@ -51,7 +55,17 @@ class Layout extends Component {
                 onMouseUp={this.stopResizeLeftMenu.bind(this)}
             >
                 <LeftMenu width={this.state.leftMenu.width} resizeBarWidth={this.state.resizeBar.width} startResize={this.startResizeLeftMenu.bind(this)} />
-                <RightBlock />
+                {/* <RightBlock> 
+                    <Route exact path='/' component={Home}></Route>
+                    <Route path='/admin/customers' component={ListCustomer}></Route>
+                    <Route path='/admin/customers/create' component={CustomerDetail}></Route>
+                </RightBlock>
+                <div> 
+                    <Route exact path='/' component={Home}></Route>
+                    <Route path='/admin/customers' component={ListCustomer}></Route>
+                    <Route path='/admin/customers/create' component={CustomerDetail}></Route>
+                </div> */}
+                <div></div>
             </div>
         );
     }
